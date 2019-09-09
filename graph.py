@@ -40,14 +40,10 @@ class MyNode:
     
     '''
     
-    def __init__(self, node_value, position, parent, node_status, left_status, right_status):
+    def __init__(self, node_value, position):
         
         self.node_value = node_value
         self.position = position
-        self.parent = parent
-        self.node_status = node_status
-        self.left_status = left_status
-        self.right_status = right_status
         
         '''
         init for MyGraph Class
@@ -120,10 +116,7 @@ class GraphDict:
                     print((row, col))
 
                     self.graph_dict[(row, col)] = self.MyNode(node_value=self.matrix[row, col], 
-                                                              position= (row, col), 
-                                                              node_status =True, 
-                                                              left_status = True, 
-                                                              right_status = True)
+                                                              position= (row, col))
                     
     def add_children(self):
         
