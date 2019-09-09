@@ -40,10 +40,11 @@ class MyNode:
     
     '''
     
-    def __init__(self, node_value, position, node_status, left_status, right_status):
+    def __init__(self, node_value, position, parent, node_status, left_status, right_status):
         
         self.node_value = node_value
         self.position = position
+        self.parent = parent
         self.node_status = node_status
         self.left_status = left_status
         self.right_status = right_status
@@ -76,6 +77,19 @@ class MyNode:
         
         self.right_child = new_right_child
         
+    
+    #def add_parent(self, new_parent):
+
+       # '''
+       # add parent to present node object
+        
+       # Input: 
+        
+       # new_parent :  MyNode object
+        
+        
+        #self.parent = new_parent
+     
         
 class GraphDict:
     
